@@ -29,9 +29,28 @@ namespace proyecto_3
 			//
 		}
 		
-		void BtnCalcularClick(object sender, EventArgs e)
+		private void BtnCalcularClick(object sender, EventArgs e)
 		{
-			
+		    string palabra = txtPalabra.Text.ToLower();
+		    int vocales = 0;
+		    int consonantes = 0;
+		
+		    for (int i = 0; i < palabra.Length; i++)
+		    {
+		        if (palabra[i] == 'a' || palabra[i] == 'e' ||
+		            palabra[i] == 'i' || palabra[i] == 'o' ||
+		            palabra[i] == 'u')
+		        {
+		            vocales++;
+		        }
+		        else if (palabra[i] >= 'a' && palabra[i] <= 'z')
+		        {
+		            consonantes++;
+		        }
+		    }
+		
+		    txtVocales.Text = vocales.ToString();
+		    txtConsonantes.Text = consonantes.ToString();
 		}
 	}
 }
