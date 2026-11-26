@@ -58,6 +58,10 @@
     <Compile Include="Ordenamiento.cs" />
     <Compile Include="Ordenamiento.Designer.cs">
       <DependentUpon>Ordenamiento.cs</DependentUpon>
+    <Compile Include="mmp.cs" />
+    <Compile Include="mmp.Designer.cs">
+      <DependentUpon>mmp.cs</DependentUpon>
+ aaa82c94e32e526cf2ab1598436f756419e5856c
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,8 +73,13 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Ordenamiento.resx">
       <DependentUpon>Ordenamiento.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="mmp.resx">
+      <DependentUpon>mmp.cs</DependentUpon>
+>>>>>>> aaa82c94e32e526cf2ab1598436f756419e5856c
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
