@@ -36,6 +36,7 @@ namespace proyecto_3
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,9 @@ namespace proyecto_3
 			this.mayorMenorYpromedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.palabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.vocalesconsonantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -112,6 +115,16 @@ namespace proyecto_3
 			this.vocalesconsonantesToolStripMenuItem.Text = "Vocales, &consonantes";
 			this.vocalesconsonantesToolStripMenuItem.Click += new System.EventHandler(this.VocalesconsonantesToolStripMenuItemClick);
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(32, 55);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(452, 202);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
+			// 
 			// Menu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,9 +137,11 @@ namespace proyecto_3
 			this.Text = "Menu";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem vocalesconsonantesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem palabraToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem mayorMenorYpromedioToolStripMenuItem;

@@ -59,6 +59,10 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ordenamiento.cs" />
+    <Compile Include="Ordenamiento.Designer.cs">
+      <DependentUpon>Ordenamiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="mmp.cs" />
     <Compile Include="mmp.Designer.cs">
       <DependentUpon>mmp.cs</DependentUpon>
