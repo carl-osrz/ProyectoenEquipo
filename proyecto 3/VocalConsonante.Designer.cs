@@ -43,68 +43,87 @@ namespace proyecto_3
 			this.txtVocales = new System.Windows.Forms.TextBox();
 			this.txtConsonantes = new System.Windows.Forms.TextBox();
 			this.btnCalcular = new System.Windows.Forms.Button();
+			this.btnRegresar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(13, 84);
+			this.label1.Location = new System.Drawing.Point(9, 55);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.Size = new System.Drawing.Size(67, 15);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Palabra";
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(13, 172);
+			this.label2.Location = new System.Drawing.Point(9, 112);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(100, 23);
+			this.label2.Size = new System.Drawing.Size(67, 15);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Vocales";
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(13, 274);
+			this.label3.Location = new System.Drawing.Point(9, 178);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(100, 23);
+			this.label3.Size = new System.Drawing.Size(67, 15);
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Consonantes";
 			// 
 			// txtPalabra
 			// 
-			this.txtPalabra.Location = new System.Drawing.Point(119, 84);
+			this.txtPalabra.Location = new System.Drawing.Point(79, 55);
+			this.txtPalabra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtPalabra.Name = "txtPalabra";
-			this.txtPalabra.Size = new System.Drawing.Size(185, 26);
+			this.txtPalabra.Size = new System.Drawing.Size(125, 20);
 			this.txtPalabra.TabIndex = 3;
 			// 
 			// txtVocales
 			// 
-			this.txtVocales.Location = new System.Drawing.Point(120, 172);
+			this.txtVocales.Location = new System.Drawing.Point(80, 112);
+			this.txtVocales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtVocales.Name = "txtVocales";
-			this.txtVocales.Size = new System.Drawing.Size(100, 26);
+			this.txtVocales.Size = new System.Drawing.Size(68, 20);
 			this.txtVocales.TabIndex = 4;
 			// 
 			// txtConsonantes
 			// 
-			this.txtConsonantes.Location = new System.Drawing.Point(120, 274);
+			this.txtConsonantes.Location = new System.Drawing.Point(80, 178);
+			this.txtConsonantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtConsonantes.Name = "txtConsonantes";
-			this.txtConsonantes.Size = new System.Drawing.Size(100, 26);
+			this.txtConsonantes.Size = new System.Drawing.Size(68, 20);
 			this.txtConsonantes.TabIndex = 5;
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(416, 83);
+			this.btnCalcular.Location = new System.Drawing.Point(277, 54);
+			this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnCalcular.Name = "btnCalcular";
-			this.btnCalcular.Size = new System.Drawing.Size(112, 27);
+			this.btnCalcular.Size = new System.Drawing.Size(75, 18);
 			this.btnCalcular.TabIndex = 6;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = true;
 			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
 			// 
+			// btnRegresar
+			// 
+			this.btnRegresar.Location = new System.Drawing.Point(303, 214);
+			this.btnRegresar.Name = "btnRegresar";
+			this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+			this.btnRegresar.TabIndex = 7;
+			this.btnRegresar.Text = "Regresar";
+			this.btnRegresar.UseVisualStyleBackColor = true;
+			this.btnRegresar.Click += new System.EventHandler(this.BtnRegresarClick);
+			// 
 			// VocalConsonante
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(619, 527);
+			this.ClientSize = new System.Drawing.Size(413, 343);
+			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtConsonantes);
 			this.Controls.Add(this.txtVocales);
@@ -112,11 +131,13 @@ namespace proyecto_3
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "VocalConsonante";
 			this.Text = "VocalConsonante";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnRegresar;
 		private System.Windows.Forms.Button btnCalcular;
 		private System.Windows.Forms.TextBox txtConsonantes;
 		private System.Windows.Forms.TextBox txtVocales;

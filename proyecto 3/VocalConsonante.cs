@@ -52,5 +52,12 @@ namespace proyecto_3
 		    txtVocales.Text = vocales.ToString();
 		    txtConsonantes.Text = consonantes.ToString();
 		}
+		
+		void BtnRegresarClick(object sender, EventArgs e)
+		{
+			Menu x = new Menu();
+			this.Hide();
+			x.Show();
+		}
 	}
 }

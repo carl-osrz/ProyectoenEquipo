@@ -28,5 +28,12 @@ namespace proyecto_3
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnRegresarClick(object sender, EventArgs e)
+		{
+			Menu x = new Menu();
+			this.Hide();
+			x.Show();
+		}
 	}
 }

@@ -28,5 +28,33 @@ namespace proyecto_3
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void OrdenamientoDeNúmeroToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Ordenamiento orden = new Ordenamiento();
+			this.Hide();
+			orden.Show();
+		}
+		
+		void MayorMenorYpromedioToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			mmp m = new mmp();
+			this.Hide();
+			m.Show();
+		}
+		
+		void PalabraToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form f = new Form();
+			this.Hide();
+			f.Show();
+		}
+		
+		void VocalesconsonantesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			VocalConsonante v = new VocalConsonante();
+			this.Hide();
+			v.Show();
+		}
 	}
 }

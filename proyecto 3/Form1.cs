@@ -48,7 +48,9 @@ namespace proyecto_3
 		
 		void BtnSalirClick(object sender, EventArgs e)
 		{
-			Close();
+			Menu x = new Menu();
+			this.Hide();
+			x.Show();
 		}
 	}
 }

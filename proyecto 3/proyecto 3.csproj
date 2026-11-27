@@ -56,14 +56,16 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs" />
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menu.Designer.cs" />
+    <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="mmp.cs" />
     <Compile Include="mmp.Designer.cs">
       <DependentUpon>mmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento.cs" />
+    <Compile Include="Ordenamiento.Designer.cs">
+      <DependentUpon>Ordenamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,17 +75,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx",/>
+    <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VocalConsonante.resx" />
+    <EmbeddedResource Include="Ordenamiento.resx">
+      <DependentUpon>Ordenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VocalConsonante.resx">
       <DependentUpon>VocalConsonante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mmp.resx">
       <DependentUpon>mmp.cs</DependentUpon>
     </EmbeddedResource>
