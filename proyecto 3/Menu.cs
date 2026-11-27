@@ -45,7 +45,7 @@ namespace proyecto_3
 		
 		void PalabraToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			Form f = new Form();
+			palabra f = new palabra();
 			this.Hide();
 			f.Show();
 		}
@@ -55,6 +55,11 @@ namespace proyecto_3
 			VocalConsonante v = new VocalConsonante();
 			this.Hide();
 			v.Show();
+		}
+		
+		void SalirToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
 		}
 	}
 }

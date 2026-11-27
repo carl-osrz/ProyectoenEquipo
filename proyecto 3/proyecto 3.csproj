@@ -67,10 +67,6 @@
     <Compile Include="mmp.Designer.cs">
       <DependentUpon>mmp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ordenamiento.cs" />
-    <Compile Include="Ordenamiento.Designer.cs">
-      <DependentUpon>Ordenamiento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VocalConsonante.cs" />

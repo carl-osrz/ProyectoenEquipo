@@ -31,7 +31,29 @@ namespace proyecto_3
 		
 		void BtnCalcularClick(object sender, EventArgs e)
 		{
-			
+			string palabra;
+		    int vocales = 0;
+		    int consonantes = 0;
+		    palabra = txtPalabra.Text.ToLower();
+		    for (int i = 0; i < palabra.Length; i++)
+		    {
+		        char letra = palabra[i];
+		        if (letra >= 'a' && letra <= 'z')
+		        {
+		            if (letra == 'a' || letra == 'e' ||
+		                letra == 'i' || letra == 'o' ||
+		                letra == 'u')
+		            {
+		                vocales++;
+		            }
+		            else
+		            {
+		                consonantes++;
+		            }
+		        }
+		    }
+		    lblVocales.Text = "Número de vocales: " + vocales;
+		    lblConsonantes.Text = "Número de consonantes: " + consonantes;
 		}
 		
 		void BtnRegresarClick(object sender, EventArgs e)
