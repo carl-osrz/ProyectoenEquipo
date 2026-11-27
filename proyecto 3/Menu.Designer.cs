@@ -36,6 +36,7 @@ namespace proyecto_3
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,9 @@ namespace proyecto_3
 			this.mayorMenorYpromedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.palabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.vocalesconsonantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -54,7 +57,7 @@ namespace proyecto_3
 									this.programasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(676, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(516, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -69,7 +72,7 @@ namespace proyecto_3
 			// salirToolStripMenuItem
 			// 
 			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
 			this.salirToolStripMenuItem.Text = "&Salir";
 			// 
 			// programasToolStripMenuItem
@@ -107,20 +110,33 @@ namespace proyecto_3
 			this.vocalesconsonantesToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
 			this.vocalesconsonantesToolStripMenuItem.Text = "Vocales, &consonantes";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(32, 55);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(452, 202);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
+			// 
 			// Menu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(676, 428);
+			this.ClientSize = new System.Drawing.Size(516, 284);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Menu";
 			this.Text = "Menu";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem vocalesconsonantesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem palabraToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem mayorMenorYpromedioToolStripMenuItem;
