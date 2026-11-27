@@ -49,35 +49,39 @@ namespace proyecto_3
 			// lblPalabra
 			// 
 			this.lblPalabra.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPalabra.Location = new System.Drawing.Point(12, 106);
+			this.lblPalabra.Location = new System.Drawing.Point(16, 130);
+			this.lblPalabra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblPalabra.Name = "lblPalabra";
-			this.lblPalabra.Size = new System.Drawing.Size(100, 23);
+			this.lblPalabra.Size = new System.Drawing.Size(133, 28);
 			this.lblPalabra.TabIndex = 0;
 			this.lblPalabra.Text = "Palabra:";
 			// 
 			// label2
 			// 
-			this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(41, 13);
+			this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(13, 26);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(139, 23);
+			this.label2.Size = new System.Drawing.Size(212, 37);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "PALABRA AL REVEZ";
 			// 
 			// txtpalabra
 			// 
-			this.txtpalabra.Location = new System.Drawing.Point(131, 109);
+			this.txtpalabra.Location = new System.Drawing.Point(184, 134);
+			this.txtpalabra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.txtpalabra.Name = "txtpalabra";
-			this.txtpalabra.Size = new System.Drawing.Size(100, 20);
+			this.txtpalabra.Size = new System.Drawing.Size(269, 22);
 			this.txtpalabra.TabIndex = 2;
 			// 
 			// btnImprimir
 			// 
 			this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.btnImprimir.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnImprimir.Location = new System.Drawing.Point(23, 221);
+			this.btnImprimir.Location = new System.Drawing.Point(16, 377);
+			this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnImprimir.Name = "btnImprimir";
-			this.btnImprimir.Size = new System.Drawing.Size(76, 40);
+			this.btnImprimir.Size = new System.Drawing.Size(101, 49);
 			this.btnImprimir.TabIndex = 3;
 			this.btnImprimir.Text = "Imprimir";
 			this.btnImprimir.UseVisualStyleBackColor = false;
@@ -87,9 +91,10 @@ namespace proyecto_3
 			// 
 			this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnLimpiar.Location = new System.Drawing.Point(105, 221);
+			this.btnLimpiar.Location = new System.Drawing.Point(166, 377);
+			this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnLimpiar.Name = "btnLimpiar";
-			this.btnLimpiar.Size = new System.Drawing.Size(76, 40);
+			this.btnLimpiar.Size = new System.Drawing.Size(101, 49);
 			this.btnLimpiar.TabIndex = 4;
 			this.btnLimpiar.Text = "Limpiar";
 			this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -99,9 +104,10 @@ namespace proyecto_3
 			// 
 			this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.btnSalir.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSalir.Location = new System.Drawing.Point(187, 221);
+			this.btnSalir.Location = new System.Drawing.Point(349, 377);
+			this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnSalir.Name = "btnSalir";
-			this.btnSalir.Size = new System.Drawing.Size(78, 40);
+			this.btnSalir.Size = new System.Drawing.Size(104, 49);
 			this.btnSalir.TabIndex = 5;
 			this.btnSalir.Text = "Salir";
 			this.btnSalir.UseVisualStyleBackColor = false;
@@ -109,18 +115,20 @@ namespace proyecto_3
 			// 
 			// lblResultado
 			// 
-			this.lblResultado.Location = new System.Drawing.Point(131, 158);
+			this.lblResultado.Location = new System.Drawing.Point(16, 204);
+			this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(224, 60);
+			this.lblResultado.Size = new System.Drawing.Size(437, 146);
 			this.lblResultado.TabIndex = 6;
 			// 
 			// palabra
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(367, 418);
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(489, 514);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnLimpiar);
@@ -128,6 +136,7 @@ namespace proyecto_3
 			this.Controls.Add(this.txtpalabra);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.lblPalabra);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "palabra";
 			this.Text = "Palabra";
 			this.ResumeLayout(false);
