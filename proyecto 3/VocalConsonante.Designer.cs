@@ -43,86 +43,87 @@ namespace proyecto_3
 			this.txtVocales = new System.Windows.Forms.TextBox();
 			this.txtConsonantes = new System.Windows.Forms.TextBox();
 			this.btnCalcular = new System.Windows.Forms.Button();
-			this.label4 = new System.Windows.Forms.Label();
+			this.btnRegresar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(12, 84);
+			this.label1.Location = new System.Drawing.Point(9, 55);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(115, 30);
+			this.label1.Size = new System.Drawing.Size(67, 15);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Palabra";
 			// 
 			// label2
 			// 
-			this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(12, 146);
+			this.label2.Location = new System.Drawing.Point(9, 112);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(115, 30);
+			this.label2.Size = new System.Drawing.Size(67, 15);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Vocales";
 			// 
 			// label3
 			// 
-			this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(12, 219);
+			this.label3.Location = new System.Drawing.Point(9, 178);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(145, 30);
+			this.label3.Size = new System.Drawing.Size(67, 15);
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Consonantes";
 			// 
 			// txtPalabra
 			// 
-			this.txtPalabra.Location = new System.Drawing.Point(163, 81);
-			this.txtPalabra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.txtPalabra.Location = new System.Drawing.Point(79, 55);
+			this.txtPalabra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtPalabra.Name = "txtPalabra";
-			this.txtPalabra.Size = new System.Drawing.Size(165, 22);
+			this.txtPalabra.Size = new System.Drawing.Size(125, 20);
 			this.txtPalabra.TabIndex = 3;
 			// 
 			// txtVocales
 			// 
-			this.txtVocales.Location = new System.Drawing.Point(163, 146);
-			this.txtVocales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.txtVocales.Location = new System.Drawing.Point(80, 112);
+			this.txtVocales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtVocales.Name = "txtVocales";
-			this.txtVocales.Size = new System.Drawing.Size(89, 22);
+			this.txtVocales.Size = new System.Drawing.Size(68, 20);
 			this.txtVocales.TabIndex = 4;
 			// 
 			// txtConsonantes
 			// 
-			this.txtConsonantes.Location = new System.Drawing.Point(163, 220);
-			this.txtConsonantes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.txtConsonantes.Location = new System.Drawing.Point(80, 178);
+			this.txtConsonantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtConsonantes.Name = "txtConsonantes";
-			this.txtConsonantes.Size = new System.Drawing.Size(89, 22);
+			this.txtConsonantes.Size = new System.Drawing.Size(68, 20);
 			this.txtConsonantes.TabIndex = 5;
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(374, 193);
-			this.btnCalcular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnCalcular.Location = new System.Drawing.Point(277, 54);
+			this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnCalcular.Name = "btnCalcular";
-			this.btnCalcular.Size = new System.Drawing.Size(115, 49);
+			this.btnCalcular.Size = new System.Drawing.Size(75, 18);
 			this.btnCalcular.TabIndex = 6;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = true;
 			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
 			// 
-			// label4
+			// btnRegresar
 			// 
-			this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(-3, 9);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(541, 41);
-			this.label4.TabIndex = 7;
-			this.label4.Text = "Vocales y consonantes de una palabra";
+			this.btnRegresar.Location = new System.Drawing.Point(303, 214);
+			this.btnRegresar.Name = "btnRegresar";
+			this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+			this.btnRegresar.TabIndex = 7;
+			this.btnRegresar.Text = "Regresar";
+			this.btnRegresar.UseVisualStyleBackColor = true;
+			this.btnRegresar.Click += new System.EventHandler(this.BtnRegresarClick);
 			// 
 			// VocalConsonante
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(550, 278);
-			this.Controls.Add(this.label4);
+			this.ClientSize = new System.Drawing.Size(413, 343);
+			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtConsonantes);
 			this.Controls.Add(this.txtVocales);
@@ -130,13 +131,13 @@ namespace proyecto_3
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "VocalConsonante";
 			this.Text = "VocalConsonante";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Button btnRegresar;
 		private System.Windows.Forms.Button btnCalcular;
 		private System.Windows.Forms.TextBox txtConsonantes;
 		private System.Windows.Forms.TextBox txtVocales;

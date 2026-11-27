@@ -55,9 +55,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Menu.cs" />
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
@@ -68,6 +66,10 @@
     <Compile Include="mmp.cs" />
     <Compile Include="mmp.Designer.cs">
       <DependentUpon>mmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento.cs" />
+    <Compile Include="Ordenamiento.Designer.cs">
+      <DependentUpon>Ordenamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,8 +88,12 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento.resx">
+      <DependentUpon>Ordenamiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VocalConsonante.resx">
       <DependentUpon>VocalConsonante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mmp.resx">
       <DependentUpon>mmp.cs</DependentUpon>
     </EmbeddedResource>

@@ -57,7 +57,8 @@ namespace proyecto_3
 									this.programasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(516, 28);
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+			this.menuStrip1.Size = new System.Drawing.Size(507, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -66,13 +67,13 @@ namespace proyecto_3
 			this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.salirToolStripMenuItem});
 			this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
 			this.archivoToolStripMenuItem.Text = "&Archivo";
 			// 
 			// salirToolStripMenuItem
 			// 
 			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
 			this.salirToolStripMenuItem.Text = "&Salir";
 			// 
 			// programasToolStripMenuItem
@@ -83,32 +84,36 @@ namespace proyecto_3
 									this.palabraToolStripMenuItem,
 									this.vocalesconsonantesToolStripMenuItem});
 			this.programasToolStripMenuItem.Name = "programasToolStripMenuItem";
-			this.programasToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+			this.programasToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
 			this.programasToolStripMenuItem.Text = "Pr&ogramas";
 			// 
 			// ordenamientoDeNúmeroToolStripMenuItem
 			// 
 			this.ordenamientoDeNúmeroToolStripMenuItem.Name = "ordenamientoDeNúmeroToolStripMenuItem";
-			this.ordenamientoDeNúmeroToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+			this.ordenamientoDeNúmeroToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
 			this.ordenamientoDeNúmeroToolStripMenuItem.Text = "&Ordenamiento de número";
+			this.ordenamientoDeNúmeroToolStripMenuItem.Click += new System.EventHandler(this.OrdenamientoDeNúmeroToolStripMenuItemClick);
 			// 
 			// mayorMenorYpromedioToolStripMenuItem
 			// 
 			this.mayorMenorYpromedioToolStripMenuItem.Name = "mayorMenorYpromedioToolStripMenuItem";
-			this.mayorMenorYpromedioToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+			this.mayorMenorYpromedioToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
 			this.mayorMenorYpromedioToolStripMenuItem.Text = "Mayor, menor y &promedio";
+			this.mayorMenorYpromedioToolStripMenuItem.Click += new System.EventHandler(this.MayorMenorYpromedioToolStripMenuItemClick);
 			// 
 			// palabraToolStripMenuItem
 			// 
 			this.palabraToolStripMenuItem.Name = "palabraToolStripMenuItem";
-			this.palabraToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+			this.palabraToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
 			this.palabraToolStripMenuItem.Text = "&Palabra";
+			this.palabraToolStripMenuItem.Click += new System.EventHandler(this.PalabraToolStripMenuItemClick);
 			// 
 			// vocalesconsonantesToolStripMenuItem
 			// 
 			this.vocalesconsonantesToolStripMenuItem.Name = "vocalesconsonantesToolStripMenuItem";
-			this.vocalesconsonantesToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+			this.vocalesconsonantesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
 			this.vocalesconsonantesToolStripMenuItem.Text = "Vocales, &consonantes";
+			this.vocalesconsonantesToolStripMenuItem.Click += new System.EventHandler(this.VocalesconsonantesToolStripMenuItemClick);
 			// 
 			// pictureBox1
 			// 
@@ -122,12 +127,12 @@ namespace proyecto_3
 			// 
 			// Menu
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(516, 284);
-			this.Controls.Add(this.pictureBox1);
+			this.ClientSize = new System.Drawing.Size(507, 348);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "Menu";
 			this.Text = "Menu";
 			this.menuStrip1.ResumeLayout(false);

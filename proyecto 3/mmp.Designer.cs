@@ -44,73 +44,88 @@ namespace proyecto_3
 			this.txtSerie = new System.Windows.Forms.TextBox();
 			this.lblRespuesta = new System.Windows.Forms.Label();
 			this.btnCalcular = new System.Windows.Forms.Button();
+			this.btnRegresar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(49, 21);
+			this.label1.Location = new System.Drawing.Point(37, 17);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(629, 46);
+			this.label1.Size = new System.Drawing.Size(472, 37);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Numero Mayor, Menor y Promedio";
 			// 
 			// label2
 			// 
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(12, 103);
+			this.label2.Location = new System.Drawing.Point(37, 84);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(338, 23);
+			this.label2.Size = new System.Drawing.Size(180, 19);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Cantidad de números a ingresar:";
 			// 
 			// label3
 			// 
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(12, 142);
+			this.label3.Location = new System.Drawing.Point(37, 115);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(329, 25);
+			this.label3.Size = new System.Drawing.Size(173, 20);
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Serie de números (sin espacio):";
 			// 
 			// txtCantidad
 			// 
-			this.txtCantidad.Location = new System.Drawing.Point(385, 97);
+			this.txtCantidad.Location = new System.Drawing.Point(234, 81);
+			this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtCantidad.Name = "txtCantidad";
-			this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+			this.txtCantidad.Size = new System.Drawing.Size(76, 20);
 			this.txtCantidad.TabIndex = 3;
 			// 
 			// txtSerie
 			// 
-			this.txtSerie.Location = new System.Drawing.Point(385, 142);
+			this.txtSerie.Location = new System.Drawing.Point(234, 118);
+			this.txtSerie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtSerie.Name = "txtSerie";
-			this.txtSerie.Size = new System.Drawing.Size(293, 22);
+			this.txtSerie.Size = new System.Drawing.Size(221, 20);
 			this.txtSerie.TabIndex = 4;
 			// 
 			// lblRespuesta
 			// 
-			this.lblRespuesta.Location = new System.Drawing.Point(158, 219);
+			this.lblRespuesta.Location = new System.Drawing.Point(118, 178);
+			this.lblRespuesta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lblRespuesta.Name = "lblRespuesta";
-			this.lblRespuesta.Size = new System.Drawing.Size(520, 107);
+			this.lblRespuesta.Size = new System.Drawing.Size(390, 87);
 			this.lblRespuesta.TabIndex = 5;
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(12, 219);
+			this.btnCalcular.Location = new System.Drawing.Point(9, 150);
+			this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnCalcular.Name = "btnCalcular";
-			this.btnCalcular.Size = new System.Drawing.Size(112, 50);
+			this.btnCalcular.Size = new System.Drawing.Size(84, 41);
 			this.btnCalcular.TabIndex = 6;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = true;
 			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
 			// 
+			// btnRegresar
+			// 
+			this.btnRegresar.Location = new System.Drawing.Point(319, 233);
+			this.btnRegresar.Name = "btnRegresar";
+			this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+			this.btnRegresar.TabIndex = 7;
+			this.btnRegresar.Text = "Regresar";
+			this.btnRegresar.UseVisualStyleBackColor = true;
+			this.btnRegresar.Click += new System.EventHandler(this.BtnRegresarClick);
+			// 
 			// mmp
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(720, 365);
+			this.ClientSize = new System.Drawing.Size(540, 297);
+			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.txtSerie);
@@ -118,11 +133,13 @@ namespace proyecto_3
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "mmp";
 			this.Text = "mmp";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnRegresar;
 		private System.Windows.Forms.Button btnCalcular;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.TextBox txtSerie;

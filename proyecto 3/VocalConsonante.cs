@@ -33,5 +33,12 @@ namespace proyecto_3
 		{
 			
 		}
+		
+		void BtnRegresarClick(object sender, EventArgs e)
+		{
+			Menu x = new Menu();
+			this.Hide();
+			x.Show();
+		}
 	}
 }
