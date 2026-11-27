@@ -99,6 +99,7 @@ namespace proyecto_3
 			this.btnCalcular.TabIndex = 6;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = true;
+			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
 			// 
 			// mmp
 			// 
