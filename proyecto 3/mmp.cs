@@ -35,5 +35,35 @@ namespace proyecto_3
 			this.Hide();
 			x.Show();
 		}
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+			int tamaño;
+		    tamaño = int.Parse(txtCantidad.Text);
+		    int[] numeros = new int[tamaño];
+		    string[] datos = txtSerie.Text.Split(',');
+		    int mayor, menor, suma = 0;
+		    double promedio;
+		    for (int i = 0; i < tamaño; i++)
+		    {
+		        numeros[i] = int.Parse(datos[i].Trim());
+		        suma += numeros[i];
+		    }
+		    mayor = numeros[0];
+		    menor = numeros[0];
+		    for (int i = 0; i < tamaño; i++)
+		    {
+		        if (numeros[i] > mayor)
+		        {
+		            mayor = numeros[i];
+		        }
+		        if (numeros[i] < menor)
+		        {
+		            menor = numeros[i];
+		        }
+		    }
+		    promedio = (double)suma / tamaño;
+		    lblRespuesta.Text = "Número mayor: " + mayor + "\nNúmero menor: " + menor + "\nPromedio: " + promedio;
+		}
 	}
 }

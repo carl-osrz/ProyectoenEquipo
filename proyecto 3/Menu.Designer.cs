@@ -46,8 +46,10 @@ namespace proyecto_3
 			this.palabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.vocalesconsonantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -57,8 +59,8 @@ namespace proyecto_3
 									this.programasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-			this.menuStrip1.Size = new System.Drawing.Size(507, 24);
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+			this.menuStrip1.Size = new System.Drawing.Size(676, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -67,14 +69,15 @@ namespace proyecto_3
 			this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.salirToolStripMenuItem});
 			this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
 			this.archivoToolStripMenuItem.Text = "&Archivo";
 			// 
 			// salirToolStripMenuItem
 			// 
 			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
 			this.salirToolStripMenuItem.Text = "&Salir";
+			this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItemClick);
 			// 
 			// programasToolStripMenuItem
 			// 
@@ -84,34 +87,34 @@ namespace proyecto_3
 									this.palabraToolStripMenuItem,
 									this.vocalesconsonantesToolStripMenuItem});
 			this.programasToolStripMenuItem.Name = "programasToolStripMenuItem";
-			this.programasToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+			this.programasToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
 			this.programasToolStripMenuItem.Text = "Pr&ogramas";
 			// 
 			// ordenamientoDeNúmeroToolStripMenuItem
 			// 
 			this.ordenamientoDeNúmeroToolStripMenuItem.Name = "ordenamientoDeNúmeroToolStripMenuItem";
-			this.ordenamientoDeNúmeroToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+			this.ordenamientoDeNúmeroToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
 			this.ordenamientoDeNúmeroToolStripMenuItem.Text = "&Ordenamiento de número";
 			this.ordenamientoDeNúmeroToolStripMenuItem.Click += new System.EventHandler(this.OrdenamientoDeNúmeroToolStripMenuItemClick);
 			// 
 			// mayorMenorYpromedioToolStripMenuItem
 			// 
 			this.mayorMenorYpromedioToolStripMenuItem.Name = "mayorMenorYpromedioToolStripMenuItem";
-			this.mayorMenorYpromedioToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+			this.mayorMenorYpromedioToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
 			this.mayorMenorYpromedioToolStripMenuItem.Text = "Mayor, menor y &promedio";
 			this.mayorMenorYpromedioToolStripMenuItem.Click += new System.EventHandler(this.MayorMenorYpromedioToolStripMenuItemClick);
 			// 
 			// palabraToolStripMenuItem
 			// 
 			this.palabraToolStripMenuItem.Name = "palabraToolStripMenuItem";
-			this.palabraToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+			this.palabraToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
 			this.palabraToolStripMenuItem.Text = "&Palabra";
 			this.palabraToolStripMenuItem.Click += new System.EventHandler(this.PalabraToolStripMenuItemClick);
 			// 
 			// vocalesconsonantesToolStripMenuItem
 			// 
 			this.vocalesconsonantesToolStripMenuItem.Name = "vocalesconsonantesToolStripMenuItem";
-			this.vocalesconsonantesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+			this.vocalesconsonantesToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
 			this.vocalesconsonantesToolStripMenuItem.Text = "Vocales, &consonantes";
 			this.vocalesconsonantesToolStripMenuItem.Click += new System.EventHandler(this.VocalesconsonantesToolStripMenuItemClick);
 			// 
@@ -125,22 +128,35 @@ namespace proyecto_3
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox2.Location = new System.Drawing.Point(21, 40);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(628, 281);
+			this.pictureBox2.TabIndex = 1;
+			this.pictureBox2.TabStop = false;
+			// 
 			// Menu
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(507, 348);
+			this.ClientSize = new System.Drawing.Size(676, 333);
+			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
-			this.Margin = new System.Windows.Forms.Padding(2);
+			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "Menu";
 			this.Text = "Menu";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem vocalesconsonantesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem palabraToolStripMenuItem;

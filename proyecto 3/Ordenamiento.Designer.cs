@@ -48,53 +48,60 @@ namespace proyecto_3
 			// 
 			// lblNumeros
 			// 
-			this.lblNumeros.Location = new System.Drawing.Point(27, 28);
+			this.lblNumeros.Location = new System.Drawing.Point(36, 58);
+			this.lblNumeros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblNumeros.Name = "lblNumeros";
-			this.lblNumeros.Size = new System.Drawing.Size(180, 23);
+			this.lblNumeros.Size = new System.Drawing.Size(240, 28);
 			this.lblNumeros.TabIndex = 0;
 			this.lblNumeros.Text = "¿Cuantos numeros va a ingresar?";
 			// 
 			// lblArreglo
 			// 
-			this.lblArreglo.Location = new System.Drawing.Point(27, 68);
+			this.lblArreglo.Location = new System.Drawing.Point(36, 101);
+			this.lblArreglo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblArreglo.Name = "lblArreglo";
-			this.lblArreglo.Size = new System.Drawing.Size(100, 23);
+			this.lblArreglo.Size = new System.Drawing.Size(217, 28);
 			this.lblArreglo.TabIndex = 1;
 			this.lblArreglo.Text = "Arreglo de numeros:";
 			// 
 			// lblMenor
 			// 
-			this.lblMenor.Location = new System.Drawing.Point(58, 168);
+			this.lblMenor.Location = new System.Drawing.Point(26, 161);
+			this.lblMenor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblMenor.Name = "lblMenor";
-			this.lblMenor.Size = new System.Drawing.Size(100, 23);
+			this.lblMenor.Size = new System.Drawing.Size(397, 108);
 			this.lblMenor.TabIndex = 2;
 			// 
 			// lblMayor
 			// 
-			this.lblMayor.Location = new System.Drawing.Point(234, 168);
+			this.lblMayor.Location = new System.Drawing.Point(312, 207);
+			this.lblMayor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblMayor.Name = "lblMayor";
-			this.lblMayor.Size = new System.Drawing.Size(100, 23);
+			this.lblMayor.Size = new System.Drawing.Size(133, 28);
 			this.lblMayor.TabIndex = 3;
 			// 
 			// txtNumeros
 			// 
-			this.txtNumeros.Location = new System.Drawing.Point(213, 33);
+			this.txtNumeros.Location = new System.Drawing.Point(284, 55);
+			this.txtNumeros.Margin = new System.Windows.Forms.Padding(4);
 			this.txtNumeros.Name = "txtNumeros";
-			this.txtNumeros.Size = new System.Drawing.Size(100, 20);
+			this.txtNumeros.Size = new System.Drawing.Size(132, 22);
 			this.txtNumeros.TabIndex = 4;
 			// 
 			// txtArreglo
 			// 
-			this.txtArreglo.Location = new System.Drawing.Point(213, 80);
+			this.txtArreglo.Location = new System.Drawing.Point(284, 107);
+			this.txtArreglo.Margin = new System.Windows.Forms.Padding(4);
 			this.txtArreglo.Name = "txtArreglo";
-			this.txtArreglo.Size = new System.Drawing.Size(100, 20);
+			this.txtArreglo.Size = new System.Drawing.Size(132, 22);
 			this.txtArreglo.TabIndex = 5;
 			// 
 			// btnOrdenamiento
 			// 
-			this.btnOrdenamiento.Location = new System.Drawing.Point(133, 236);
+			this.btnOrdenamiento.Location = new System.Drawing.Point(36, 283);
+			this.btnOrdenamiento.Margin = new System.Windows.Forms.Padding(4);
 			this.btnOrdenamiento.Name = "btnOrdenamiento";
-			this.btnOrdenamiento.Size = new System.Drawing.Size(75, 23);
+			this.btnOrdenamiento.Size = new System.Drawing.Size(133, 49);
 			this.btnOrdenamiento.TabIndex = 6;
 			this.btnOrdenamiento.Text = "Ordenar";
 			this.btnOrdenamiento.UseVisualStyleBackColor = true;
@@ -102,9 +109,10 @@ namespace proyecto_3
 			// 
 			// btnRegresar
 			// 
-			this.btnRegresar.Location = new System.Drawing.Point(323, 208);
+			this.btnRegresar.Location = new System.Drawing.Point(290, 283);
+			this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
 			this.btnRegresar.Name = "btnRegresar";
-			this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+			this.btnRegresar.Size = new System.Drawing.Size(133, 49);
 			this.btnRegresar.TabIndex = 7;
 			this.btnRegresar.Text = "Regresar";
 			this.btnRegresar.UseVisualStyleBackColor = true;
@@ -112,9 +120,9 @@ namespace proyecto_3
 			// 
 			// Ordenamiento
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(412, 313);
+			this.ClientSize = new System.Drawing.Size(480, 385);
 			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnOrdenamiento);
 			this.Controls.Add(this.txtArreglo);
@@ -123,6 +131,7 @@ namespace proyecto_3
 			this.Controls.Add(this.lblMenor);
 			this.Controls.Add(this.lblArreglo);
 			this.Controls.Add(this.lblNumeros);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Ordenamiento";
 			this.Text = "Ordenamiento";
 			this.ResumeLayout(false);
