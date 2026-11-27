@@ -28,5 +28,23 @@ namespace proyecto_3
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+			int tamaño;
+		    tamaño = int.Parse(txtCantidad.Text);
+		    int[] numeros = new int[tamaño];
+		    string[] datos = txtSerie.Text.Split(',');
+		    for (int i = 0; i < tamaño; i++)
+		    {
+		        numeros[i] = int.Parse(datos[i].Trim());
+		    }
+		    string resultado = "Lista de números: ";
+		    for (int i = 0; i < tamaño; i++)
+		    {
+		        resultado += numeros[i] + " ";
+		    }
+		    lblRespuesta.Text = resultado;
+		}
 	}
 }
